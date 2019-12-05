@@ -1,0 +1,12 @@
+#! python3
+
+import os
+import datetime
+
+os.chdir(r'C:\...\...\...')
+time = datetime.datetime.today()
+stopTime = time.strftime("%Y-%m-%d %H:%M:%S")
+
+logFile = open('Windows timelog.txt', 'a')
+logFile.write('Stop ' + stopTime +'\n')
+logFile.close()
